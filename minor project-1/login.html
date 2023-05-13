@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1><a href="./index.html">Mbmite</a> </h1>
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./login.html">Login</a>
+      </div>
+    </div>
+    <marquee>WEL-COME TO MBM UNIVERSITY JODHPUR</marquee>
+  </header>
+
+  <div class="login_container">
+
+
+    <form class="login-form" onsubmit="login(event)">
+      <h2>Login</h2>
+
+      <label for="useremail"><b>Email</b></label>
+      <input type="email" placeholder="Enter useremail" name="useremail" id="useremail" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="userpassword" required>
+
+      <button type="submit" onclick="validateLoginForm()">Login</button>
+
+    </form>
+
+
+    <form class="register-form" onsubmit="signup(event)">
+      <h2>Register</h2>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" id="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+      <button type="submit" onclick="return validateRegisterForm()">Register</button>
+
+
+    </form>
+
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f">facebook</i></a>
+      <a href="#"><i class="fab fa-twitter">twitter</i></a>
+      <a href="#"><i class="fab fa-instagram">instagram</i></a>
+      <a href="#"><i class="fab fa-linkedin">linkedin</i></a>
+    </div>
+    <p>&copy; 2023 Mbmite. All rights reserved.</p>
+  </footer>
+</body>
+<script src="./auth.js"></script>
+<script src="./app.js" type="module"></script>
+
+
+
+
+
+</html>

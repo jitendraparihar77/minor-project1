@@ -1,0 +1,302 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background-color:#DEE9EF;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    
+  }
+  
+  .logo {
+    padding: 0 1rem;
+  }
+  .logo a {
+text-decoration: none;
+color: #000;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  marquee{
+  background-color: #35418eff;
+  font-size: 25px;
+  }
+
+  /* home section */
+section{
+    display: flex;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+ .department {
+    
+    width: 10rem;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #000;
+ }
+ 
+
+ .dep_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .dep_item a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+
+  .content{
+    width:100%;
+    height: auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content:flex-start;
+
+    flex-wrap: wrap;
+    row-gap:1rem;
+    column-gap: 0.5rem;
+   
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container > .box {
+    width: 20vw;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(36, 34, 34, 0.662);
+    font-weight: 800;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  .container > .box p {
+    /* Other existing styles */
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .container>.box #branch{
+    text-transform: capitalize;
+  }
+  
+  
+  /* @media screen and (max-width: 768px) {
+    .container > .box {
+      width: 40vw;
+      height: 12rem;
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+  } */
+  
+  @media screen and (max-width: 938px) {
+    .container > .box {
+      width: 80vw;
+      height: 16rem;
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+  }
+  
+    
+
+  
+
+  /* footer */
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin:10rem 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    /* position: absolute;
+    bottom: 0; */
+  }
+  
+ .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+ .social-links a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+ 
+  
+  p {
+    margin: 0;
+  }
+  
+  /* login page */
+
+  .login_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  .login-form, .register-form {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #888888;
+    width: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  .login-form h2, .register-form h2 {
+    text-align: center;
+    color: #555555;
+    margin-bottom: 20px;
+  }
+  input[type=text], input[type=password], input[type=email] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  button[type=submit]:hover {
+    background-color: #3e8e41;
+  }
+   .register-form p {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 14px;
+      }
+  .error {
+    color: #FF0000;
+    font-size: 12px;
+  }
+
+  /* about */
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about h1{
+  font-size:30px;
+  margin: 10px 10px;
+}
+
+.about_content{
+  width:90%;
+  
+}
+.about_content p{
+  font-size:20px;
+  /* text-align: center; */
+  margin: 5px 5px;
+}
+.image{
+  width:90%;
+  /* height: 200px; */
+}
+
+.image img{
+  background-size: cover;
+  background-position: center center;
+  height: 60%;
+  width: 100%;
+}
+
+/* contact */
+section{
+  display: flex;
+  justify-content: center;
+}
+.contact{
+  width: 20rem;
+  margin: 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px;
+}
+
+.contact button{
+background-color: #3e8e41;
+width: 5rem;
+height: 2rem;
+border-radius: 5px;
+margin:2rem 2rem;
+}
+.contact textarea{
+  width: 100%;
+  min-height: 5rem;
+  outline: none;
+  border: none;
+}
+::placeholder{
+  font-weight:300;
+}
